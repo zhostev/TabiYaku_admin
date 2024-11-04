@@ -1,16 +1,30 @@
+# Python cache files
 __pycache__/
-.idea/
-venv/
-.mypy_cache/
-.vscode
-.ruff_cache/
-.pytest_cache/
-migrations/
 
+# IDE specific files
+.idea/
+.vscode/
+
+# Environment directories
+venv/
+
+# Mypy cache
+.mypy_cache/
+
+# Ruff cache
+.ruff_cache/
+
+# Pytest cache
+.pytest_cache/
+
+# Django migrations and SQLite database files
+migrations/
 db.sqlite3
 db.sqlite3-journal
 db.sqlite3-shm
 db.sqlite3-wal
 
+# macOS specific files
 .DS_Store
 ._.DS_Store
+.env
