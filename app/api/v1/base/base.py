@@ -26,6 +26,7 @@ async def login_access_token(credentials: CredentialsSchema):
     data = JWTOut(
         access_token=create_access_token(
             data=JWTPayload(
+                sub=user.id,  # 添加 'sub' 字段
                 user_id=user.id,
                 username=user.username,
                 is_superuser=user.is_superuser,

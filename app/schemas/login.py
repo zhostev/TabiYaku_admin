@@ -14,6 +14,7 @@ class JWTOut(BaseModel):
 
 
 class JWTPayload(BaseModel):
+    sub: int  # 用户 ID
     user_id: int
     username: str
     is_superuser: bool
